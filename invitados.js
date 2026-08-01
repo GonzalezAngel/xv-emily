@@ -11,4 +11,8 @@ window.INVITADOS_EMILY = {
     nombre: "Familia Martinez",
     boletos: 2,
   },
+  "familia-gonzalez": {
+    nombre: "Familia Gonzalez",
+    boletos: 2,
+  },
 };
