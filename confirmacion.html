@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirmacion | Mis XV Emily</title>
+    <meta
+      name="description"
+      content="Pagina de confirmacion de asistencia para los XV anos de Emily."
+    />
+    <link rel="stylesheet" href="confirmacion.css" />
+    <script src="invitados.js"></script>
+  </head>
+  <body>
+    <main class="rsvp-page">
+      <a class="home-link" href="index.html#confirmacion" aria-label="Regresar a la invitacion">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 11.5 12 4l9 7.5" />
+          <path d="M5.5 10.5V20h13v-9.5" />
+          <path d="M9.5 20v-5.5h5V20" />
+        </svg>
+      </a>
+
+      <section class="rsvp-layout" aria-labelledby="rsvp-title">
+        <h1 id="rsvp-title">Confirmacion de asistencia</h1>
+
+        <div class="invite-box">
+          <img class="ticket" src="tickets.png" alt="" aria-hidden="true" />
+          <p>Invitacion para:</p>
+          <strong class="guest-name" id="guest-name">Invitado especial</strong>
+          <strong><span id="guest-preview">4</span> personas</strong>
+          <time datetime="2027-01-16">16 Enero 2027</time>
+        </div>
+
+        <form class="rsvp-form">
+          <div class="form-copy">
+            <p>Asistire</p>
+            <p>No. de personas</p>
+          </div>
+
+          <div class="form-controls">
+            <label>
+              <span>Respuesta</span>
+              <select name="respuesta" aria-label="Respuesta de asistencia">
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Numero de personas</span>
+              <input
+                name="personas"
+                type="number"
+                min="0"
+                max="20"
+                value="4"
+                inputmode="numeric"
+                aria-label="Numero de personas"
+              />
+            </label>
+          </div>
+
+          <button class="submit-button" type="submit">Enviar respuesta</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+
+        <div class="thank-you" hidden>
+          <h2>¡Gracias por enviar tu respuesta!</h2>
+          <p>Tu confirmación ha sido registrada.</p>
+          <p>Nos vemos pronto.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="confirmacion.js"></script>
+  </body>
+</html>
