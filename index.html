@@ -9,6 +9,10 @@
       content="Invitación digital para celebrar los XV años de Emily."
     />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kapakana:wght@300&family=Leckerli+One&family=MonteCarlo&display=swap');
+    </style>
+
   </head>
   <body>
     <main class="invite">
@@ -49,8 +53,11 @@
             <span>Segundos</span>
           </div>
         </div>
-        <p class="date-line">16 Enero 2027</p>
-        <p class="script large">Mis XV</p>
+        <div class="after-countdown">
+          <p class="date-line">16 Enero 2027</p>
+          <p class="script large">Mis XV</p>
+        </div>
+        
       </section>
 
       <section class="panel letter">
@@ -141,20 +148,32 @@
             <span>Ceremonia</span>
           </li>
           <li>
-            <time>5:00 pm</time>
-            <span>Sesión de fotos</span>
+            <span class="timeline-heading">
+              <img src="icono-iglesia.png" alt="" aria-hidden="true" />
+              <time>5:00 pm</time>
+            </span>
+            <span>Coctel de bienvenida</span>
           </li>
           <li>
-            <time>6:00 pm</time>
+            <span class="timeline-heading">
+              <time>6:00 pm</time>
+              <img src="icono-iglesia.png" alt="" aria-hidden="true" />
+            </span>
             <span>Recepción</span>
           </li>
           <li>
-            <time>7:00 pm</time>
+            <span class="timeline-heading">
+              <img src="icono-iglesia.png" alt="" aria-hidden="true" />
+              <time>1:00 am</time>
+            </span>
             <span>Despedida</span>
           </li>
           <li>
-            <time>10:00 pm</time>
-            <span>Cena</span>
+            <span class="timeline-heading">
+              <time>10:00 am</time>
+              <img src="icono-iglesia.png" alt="" aria-hidden="true" />
+            </span>
+            <span>Desayuno</span>
           </li>
         </ol>
         <a class="back-menu" href="#menu-principal" aria-label="Regresar al menú principal">
@@ -175,6 +194,9 @@
           Queremos que nos acompañen haciendo su mejor outfit y, sobre todo,
           sintiéndose cómodos para disfrutar y bailar hasta el final de esta
           gran celebración.
+          <br>
+          <br>
+          Tan guapo que hasta tu te chifles.
         </p>
         <a class="back-menu" href="#menu-principal" aria-label="Regresar al menú principal">
           <svg viewBox="0 0 24 24" aria-hidden="true">

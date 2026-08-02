@@ -46,29 +46,42 @@ function csvCell(value) {
 }
 
 function downloadCsv(rows) {
-  const header = ["fecha_registro", "slug", "invitado", "boletos_asignados", "respuesta", "personas_confirmadas"];
-  const lines = [
-    header.map(csvCell).join(","),
-    ...rows.map((row) =>
-      [
-        row.fechaRegistro,
-        row.slug,
-        row.invitado,
-        row.boletosAsignados,
-        row.respuesta,
-        row.personasConfirmadas,
-      ].map(csvCell).join(",")
-    ),
-  ];
-  const blob = new Blob([lines.join("\n")], {
-    type: "text/csv;charset=utf-8",
-  });
-  const url = URL.createObjectURL(blob);
-  const link = document.createElement("a");
-  link.href = url;
-  link.download = "confirmaciones-emily.csv";
-  link.click();
-  URL.revokeObjectURL(url);
+  // URL de tu aplicación web publicada en Google Apps Script
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxAMiHIDFH-0gSnc6tkwGNUzrzi6pClN5tSzR5akcN8mZu9b9dPxVCHzTkW_3uvsN2X/exec';
+
+  const history = localStorage.getItem("confirmaciones-emily");
+  const history_array = JSON.parse(history);
+  
+  if (history_array.length < 2) {
+    enviarConfirmacion(idFamilia = rows.at(-1).invitado, boletosConfirmados = rows.at(-1).personasConfirmadas)
+  } else {
+    alert("Ya se registró una confirmación")
+  }
+
+  
+  
+  async function enviarConfirmacion(idFamilia, boletosConfirmados) {
+    // 2. Estructurar el objeto de datos
+    const payload = {
+      idFamilia: idFamilia,
+      boletosConfirmados: boletosConfirmados
+    };
+
+    try {
+      // 3. Enviar la petición POST
+      await fetch(SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors', // Evita bloqueos de políticas CORS con Apps Script
+        headers: {
+          'Content-Type': 'text/plain;charset=utf-8'
+        },
+        body: JSON.stringify(payload)
+      });
+
+    } catch (error) {
+      console.error('Error al enviar confirmación:', error);
+    }
+  }
 }
 
 function clampGuestCount() {

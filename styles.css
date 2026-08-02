@@ -81,6 +81,7 @@ a {
   min-height: 100dvh;
   color: var(--cream);
   background: var(--purple-950);
+  font-family: 'Kapakana', serif;
 }
 
 .hero::after,
@@ -119,26 +120,27 @@ h3,
   margin: 0;
   color: var(--cream);
   font-size: 2rem;
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: 700;
   line-height: 1.12;
+  font-family: "Leckerli One", cursive;
+  font-style: normal;
 }
 
 .script.small {
   margin-bottom: 28px;
-  font-size: 1.55rem;
+  font-size: 80px;
 }
 
 .script.large {
-  margin-top: 18px;
+  margin-top: 0px;
   font-size: 2.8rem;
 }
 
 h1 {
   margin: 26px 0 4px;
   color: var(--cream);
-  font-size: 4.4rem;
-  font-style: italic;
+  font-size: 9rem;
   line-height: 0.9;
 }
 
@@ -178,7 +180,7 @@ h3 {
 }
 
 .date-line {
-  margin: 0;
+  margin: 0 auto;
   color: rgba(255, 248, 239, 0.86);
   font-size: 1rem;
   font-weight: 700;
@@ -187,9 +189,11 @@ h3 {
 .hero .date-line {
   position: absolute;
   bottom: 34px;
+  font-size: 30px;
   left: 50%;
   width: max-content;
   transform: translateX(-50%);
+  font-family: 'MonteCarlo', serif;;
 }
 
 .portrait {
@@ -274,7 +278,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 8px;
-  margin: 92px auto 0;
+  margin: 300px auto 0;
   color: var(--cream);
 }
 
@@ -291,17 +295,21 @@ h3 {
 }
 
 .countdown span {
-  display: block;
   margin-top: 4px;
   font-size: 0.82rem;
   font-style: italic;
   font-weight: 700;
 }
 
+.after-countdown {
+  width: min(356px, 100%);
+  margin: 250px auto 0;
+}
+
 .intro .date-line {
-  margin-top: 52px;
   color: rgba(255, 248, 239, 0.94);
   font-size: 1.28rem;
+  font-family: "Leckerli One", cursive;
 }
 
 .intro .script.large {
@@ -309,7 +317,6 @@ h3 {
   bottom: 34px;
   left: 50%;
   width: max-content;
-  margin: 0;
   transform: translateX(-50%);
 }
 
@@ -894,7 +901,7 @@ h3 {
   }
 
   h1 {
-    font-size: 5.4rem;
+    font-size: 9rem;
   }
 
   .intro {
