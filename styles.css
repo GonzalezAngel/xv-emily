@@ -130,6 +130,7 @@ h3,
 .script.small {
   margin-bottom: 28px;
   font-size: 80px;
+  font-family: 'Kapakana', serif;
 }
 
 .script.large {
@@ -304,6 +305,7 @@ h3 {
 .after-countdown {
   width: min(356px, 100%);
   margin: 250px auto 0;
+  bottom: 34px;
 }
 
 .intro .date-line {
@@ -314,7 +316,6 @@ h3 {
 
 .intro .script.large {
   position: absolute;
-  bottom: 34px;
   left: 50%;
   width: max-content;
   transform: translateX(-50%);
