@@ -52,6 +52,7 @@ a {
   isolation: isolate;
 }
 
+
 .panel::before {
   content: "";
   position: absolute;
@@ -298,13 +299,13 @@ h3 {
 .countdown span {
   margin-top: 4px;
   font-size: 0.82rem;
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: 700;
 }
 
 .after-countdown {
   width: min(356px, 100%);
-  margin: 250px auto 0;
+  margin: 220px auto 0;
   bottom: 34px;
 }
 
@@ -362,7 +363,7 @@ h3 {
 .menu {
   min-height: 100vh;
   min-height: 100dvh;
-  gap: 150px;
+  gap: 80px;
   background: #cfc5d8;
   font-family: "Baskervville SC", serif;
 }
@@ -627,7 +628,7 @@ h3 {
   width: calc(50% - 28px);
   color: #2f2142;
   font-size: 0.9rem;
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: 700;
 }
 
@@ -640,7 +641,7 @@ h3 {
 .timeline li:nth-child(even) {
   margin-right: calc(50% + 28px);
   align-items: flex-end;
-  text-align: right;
+  text-align: left;
 }
 
 .timeline li::before {
@@ -693,6 +694,7 @@ h3 {
   min-height: 100vh;
   min-height: 100dvh;
   background: #d3c8dd;
+  justify-content: flex-start;
 }
 
 .dresscode::before {
@@ -705,7 +707,7 @@ h3 {
 }
 
 .dresscode p {
-  margin-top: 210px;
+  margin-top: 170px;
   font-size: 1.08rem;
   font-family: "Leckerli One", cursive;
 }
@@ -798,6 +800,7 @@ h3 {
   padding: 0;
   background: #1a0f28;
   overflow: hidden;
+  
 }
 
 .gallery::before,
@@ -1159,11 +1162,13 @@ h3 {
   }
 
   .location {
-    min-height: 760px;
+    min-height: 780px;
     display: grid;
-    grid-template-rows: auto 1fr auto;
-    padding-top: 32px;
-    padding-bottom: 120px;
+    grid-template-columns: minmax(260px, 0.55fr) minmax(440px, 0.8fr);
+    align-content: center;
+    justify-content: center;
+    column-gap: clamp(64px, 8vw, 120px);
+    padding-top: 72px;
   }
 
   .place-grid {
@@ -1296,7 +1301,7 @@ h3 {
     min-width: 280px;
     min-height: 66px;
     margin-top: 34px;
-    font-size: 0.9rem;
+    font-size: 2rem;
     font-family: "Kapakana", cursive;
   }
 

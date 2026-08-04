@@ -52,7 +52,7 @@ function downloadCsv(rows) {
   const history = localStorage.getItem("confirmaciones-emily");
   const history_array = JSON.parse(history);
   
-  if (history_array.length < 2) {
+  if (history_array.length < 3) {
     enviarConfirmacion(idFamilia = rows.at(-1).invitado, boletosConfirmados = rows.at(-1).personasConfirmadas)
   } else {
     alert("Ya se registró una confirmación")
