@@ -61,7 +61,7 @@ function downloadCsv(rows) {
     history_array = [];
   }
   
-  if (history_array.length < 3) {
+  if (history_array.length < 2) {
     enviarConfirmacion(idFamilia = rows.at(-1).invitado, boletosConfirmados = rows.at(-1).personasConfirmadas)
   } else {
     alert("Ya se registró una confirmación")
