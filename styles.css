@@ -95,6 +95,7 @@ a {
     radial-gradient(circle at 50% 38%, rgba(122, 72, 158, 0.24), transparent 34%),
     linear-gradient(180deg, rgba(13, 6, 24, 0.24), rgba(18, 8, 31, 0.58)),
     url("fondo-inicio.jpg") center/cover;
+    position: absolute;
 }
 
 .vine {
@@ -269,6 +270,7 @@ h3 {
   background:
     linear-gradient(rgba(50, 28, 68, 0.1), rgba(58, 31, 76, 0.18)),
     url("fondo-seccion-2.png") center/cover;
+    position: absolute;
 }
 
 .intro::after {
@@ -280,7 +282,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 8px;
-  margin: 300px auto 0;
+  margin: 180px auto 0;
   color: var(--cream);
 }
 
@@ -305,7 +307,7 @@ h3 {
 
 .after-countdown {
   width: min(356px, 100%);
-  margin: 220px auto 0;
+  margin: 35% auto 0;
   bottom: 34px;
 }
 
@@ -707,7 +709,7 @@ h3 {
 }
 
 .dresscode p {
-  margin-top: 170px;
+  margin-top: 35%;
   font-size: 1.08rem;
   font-family: "Leckerli One", cursive;
 }
