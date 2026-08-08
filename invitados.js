@@ -65,7 +65,7 @@ window.INVITADOS_EMILY = {
   },
   "familia-de-oscar-leon": {
     nombre: "Familia de Oscar León",
-    boletos: 1,
+    boletos: 2,
   },
   "familia-de-miguel-leon": {
     nombre: "Familia de Miguel León",
@@ -137,11 +137,11 @@ window.INVITADOS_EMILY = {
   },
   "familia-de-ricardo-flores": {
     nombre: "Familia de Ricardo Flores",
-    boletos: 4,
+    boletos: 3,
   },
   "familia-de-felipe-cruz": {
     nombre: "Familia de Felipe Cruz",
-    boletos: 3,
+    boletos: 2,
   },
   "familia-de-ricardo-hernandez": {
     nombre: "Familia de Ricardo Hernández",
@@ -209,7 +209,7 @@ window.INVITADOS_EMILY = {
   },
   "familia-de-valentina-valdez": {
     nombre: "Familia de Valentina Valdez",
-    boletos: 5,
+    boletos: 4,
   },
   "familia-de-mayli-juarez": {
     nombre: "Familia de Mayli Juárez",
@@ -292,7 +292,7 @@ window.INVITADOS_EMILY = {
     boletos: 4,
   },
   "familia-de-glafira": {
-    nombre: "Familia de Glafira",
+    nombre: "Familia de Glafira López",
     boletos: 4,
   },
 };
