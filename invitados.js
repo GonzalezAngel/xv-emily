@@ -1,4 +1,8 @@
 window.INVITADOS_EMILY = {
+  "invitación-prueba": {
+    nombre: "Para los papás de la quinceañera",
+    boletos: 257,
+  },
   "familia-de-jose-angel-valdez": {
     nombre: "Familia de José Angel Valdez",
     boletos: 9,
