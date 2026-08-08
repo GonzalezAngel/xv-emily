@@ -9,6 +9,7 @@ const thankYou = document.querySelector(".thank-you");
 
 const storageKey = "confirmaciones-emily";
 const guests = window.INVITADOS_EMILY || {};
+const homeLink = document.querySelector(".home-link");
 
 function getGuestSlug() {
   const url = new URL(window.location.href);
@@ -27,6 +28,9 @@ function getGuestSlug() {
 }
 
 const guestSlug = getGuestSlug();
+if (homeLink) {
+  homeLink.href = 'index.html?invitado='+encodeURIComponent(guestSlug)+'#inicio';
+}
 const currentGuest = guests[guestSlug] || {
   nombre: "Invitado especial",
   boletos: 1,
@@ -50,7 +54,12 @@ function downloadCsv(rows) {
   const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxAMiHIDFH-0gSnc6tkwGNUzrzi6pClN5tSzR5akcN8mZu9b9dPxVCHzTkW_3uvsN2X/exec';
 
   const history = localStorage.getItem("confirmaciones-emily");
-  const history_array = JSON.parse(history);
+  let history_array = [];
+  try {
+    history_array = JSON.parse(history) || [];
+  } catch {
+    history_array = [];
+  }
   
   if (history_array.length < 3) {
     enviarConfirmacion(idFamilia = rows.at(-1).invitado, boletosConfirmados = rows.at(-1).personasConfirmadas)
@@ -125,7 +134,7 @@ form.addEventListener("submit", (event) => {
   const personasConfirmadas = clampGuestCount();
 
   if (personasConfirmadas > maxGuests) {
-    statusText.textContent = `Este invitado solo tiene ${maxGuests} boleto(s) asignado(s).`;
+    statusText.textContent = "Este invitado solo tiene ${maxGuests} boleto(s) asignado(s).";
     return;
   }
 
