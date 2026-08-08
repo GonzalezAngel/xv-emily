@@ -291,7 +291,7 @@ window.INVITADOS_EMILY = {
     nombre: "Familia de Daniela González",
     boletos: 4,
   },
-  "familia-de-glafira": {
+  "familia-de-glafira-lopez": {
     nombre: "Familia de Glafira López",
     boletos: 4,
   },
