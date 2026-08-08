@@ -9,11 +9,11 @@ window.INVITADOS_EMILY = {
   },
   "familia-de-angel-gonzalez": {
     nombre: "Familia de Ángel González",
-    boletos: 2,
+    boletos: 12,
   },
   "familia-de-gerardo-villegas": {
     nombre: "Familia de Gerardo Villegas",
-    boletos: 5,
+    boletos: 6,
   },
   "familia-de-sofia-quijada": {
     nombre: "Familia de Sofía Quijada",
@@ -283,8 +283,8 @@ window.INVITADOS_EMILY = {
     nombre: "Familia de Camila Paredes",
     boletos: 3,
   },
-  "familia-de-emilio": {
-    nombre: "Familia de Emilio",
+  "familia-de-emilio-espinoza": {
+    nombre: "Familia de Emilio Espinoza",
     boletos: 2,
   },
   "familia-de-daniela-gonzalez": {
